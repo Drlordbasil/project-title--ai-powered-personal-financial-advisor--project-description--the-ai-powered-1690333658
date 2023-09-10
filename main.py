@@ -1,8 +1,10 @@
 import pandas as pd
 
+
 class PersonalFinanceAdvisor:
     def __init__(self):
-        self.user_data = pd.DataFrame(columns=['Expense', 'Amount', 'Category'])
+        self.user_data = pd.DataFrame(
+            columns=['Expense', 'Amount', 'Category'])
 
     def add_expense(self, expense, amount):
         category = self.categorize_expense(expense)
