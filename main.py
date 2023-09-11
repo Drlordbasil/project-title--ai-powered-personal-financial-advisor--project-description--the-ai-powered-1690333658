@@ -8,8 +8,8 @@ class PersonalFinanceAdvisor:
 
     def add_expense(self, expense, amount):
         category = self.categorize_expense(expense)
-        self.user_data = self.user_data.append({'Expense': expense, 'Amount': amount, 'Category': category},
-                                               ignore_index=True)
+        self.user_data = self.user_data.append(
+            {'Expense': expense, 'Amount': amount, 'Category': category}, ignore_index=True)
         print("Expense added successfully!")
 
     def categorize_expense(self, expense):
